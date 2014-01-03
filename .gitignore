@@ -5,6 +5,6 @@
 /build.*.properties
 /dist/
 build/
-lib/
+/lib/
 *.iml
 ivy.xml.MD5
