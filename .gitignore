@@ -1,6 +1,8 @@
-*.class
-
-# Package Files #
-*.jar
-*.war
-*.ear
+.*
+!.gitignore
+*classes/
+*~
+/build.*.properties
+/dist/
+build/
+*.iml
