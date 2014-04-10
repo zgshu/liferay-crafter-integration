@@ -1,0 +1,46 @@
+#*
+ Copyright (C) 2012-2013 Rivet Logic Corporation.
+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GPLv3 General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GPLv3 General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*#
+
+#set ($crafterService = $utilLocator.findUtil('crafter-integration-portlet','com.rivet.crafter.service.CrafterLocalService'))	
+#set ($query_parameters = {"q": "$keyword.getData()"})
+#set ($documentsMap = $crafterService.searchByMap($query_parameters))
+
+#set ($css-path = '/velocity-templates-theme/css/')
+<link href="${css-path}main.css" rel="stylesheet" />
+
+<h3>Searching for "$keyword.getData()", $documentsMap.size() results found:</h3>
+
+<ul class="metadata param">
+    #foreach( $item in $documentsMap )
+    <li class="">
+        <ul>
+            <li class="info">
+                <strong>CCrafter Site:</strong> <span>$item.get("crafterSite")</span>
+            </li>
+            <li class="info">
+                <strong>Content Type:</strong> <span>$item.get("content-type")</span>
+            </li>
+            <li class="info">
+                <strong>File Name:</strong> <span>$item.get("file-name")</span>
+            </li>
+            <li class="info">
+                <strong>Created Date:</strong> <span>$item.get("createdDate")</span>
+            </li>
+        </ul>
+    </li>
+    #end
+</ul>

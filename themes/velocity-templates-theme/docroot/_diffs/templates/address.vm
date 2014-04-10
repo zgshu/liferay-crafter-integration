@@ -1,0 +1,98 @@
+#*
+ Copyright (C) 2012-2013 Rivet Logic Corporation.
+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GPLv3 General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GPLv3 General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*#
+
+#set ($css-path = 'SetThisVariablePlease')
+<link href="${css-path}main.css" rel="stylesheet" />
+
+<div class="addresses">
+
+    <ul>
+        <li>
+            <div class="map">
+                <img src="http://placehold.it/400x200&text=Map" alt=""/>
+            </div>
+            <address class="content">
+                <h4>Corporate Headquarters</h4>
+                <div class="block">
+                    Rivet Logic Corporation<br/>
+                    11410 Isaac Newton Square N.<br/>
+                    Suite 210<br/>
+                    Reston, VA 20190
+                </div>
+                <div class="block">
+                    <abbr title="Phone">P</abbr>: +1.703.955.3480<br/>
+                    <abbr title="Fax">F</abbr>: +1.703.234.7711
+                </div>
+            </address>
+        </li>
+        <li>
+            <div class="map">
+                <img src="http://placehold.it/400x200&text=Map" alt=""/>
+            </div>
+            <address class="content">
+                <h4 title="">Corporate Headquarters</h4>
+                <div class="block">
+                    Rivet Logic Corporation<br/>
+                    11410 Isaac Newton Square N.<br/>
+                    Suite 210<br/>
+                    Reston, VA 20190
+                </div>
+                <div class="block">
+                    <abbr title="Phone">P</abbr>: +1.703.955.3480<br/>
+                    <abbr title="Fax">F</abbr>: +1.703.234.7711
+                </div>
+            </address>
+        </li>
+        <li>
+            <div class="map">
+                <img src="http://placehold.it/400x200&text=Map" alt=""/>
+            </div>
+            <address class="content">
+                <h4>Corporate Headquarters</h4>
+                <div class="block">
+                    Rivet Logic Corporation<br/>
+                    11410 Isaac Newton Square N.<br/>
+                    Suite 210<br/>
+                    Reston, VA 20190
+                </div>
+                <div class="block">
+                    <abbr title="Phone">P</abbr>: +1.703.955.3480<br/>
+                    <abbr title="Fax">F</abbr>: +1.703.234.7711
+                </div>
+            </address>
+        </li>
+        <li>
+            <div class="map">
+                <img src="http://placehold.it/400x200&text=Map" alt=""/>
+            </div>
+            <address class="content">
+                <h4>Corporate Headquarters</h4>
+                <div class="block">
+                    Rivet Logic Corporation<br/>
+                    11410 Isaac Newton Square N.<br/>
+                    Suite 210<br/>
+                    Reston, VA 20190
+                </div>
+                <div class="block">
+                    <abbr title="Phone">P</abbr>: +1.703.955.3480<br/>
+                    <abbr title="Fax">F</abbr>: +1.703.234.7711
+                </div>
+            </address>
+        </li>
+    </ul>
+
+</div>
