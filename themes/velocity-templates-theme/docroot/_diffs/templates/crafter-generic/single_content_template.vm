@@ -25,23 +25,21 @@
 <link href="${css-path}main.css" rel="stylesheet" />
 
 <ul class="metadata">
+
+    <li class="info">
+        <strong>Title:</strong> <span><span>$content.get("title")</span></span>
+    </li>
     <li class="info">
         <strong>Author:</strong> <span><span>$content.get("author")</span></span>
     </li>
     <li class="info">
-         <span><span>http://localhost:8080$content.get("authorImage")</span></span>
-    </li>
-    <li class="info">
-        <strong>Internal Title:</strong> <span><span>$content.get("internal-title")</span></span>
+        <strong>Author Image:</strong> <span><span><img src="$content.get("authorImage")" src="Mike Vertal" /></span></span>
     </li>
     <li class="info">
         <strong>Content Type:</strong> <span>$content.get("content-type")</span>
     </li>
     <li class="info">
         <strong>Crafter Site:</strong> <span>$content.get("crafterSite")</span>
-    </li>
-    <li class="info">
-        <strong>Created Date:</strong> <span>$content.get("createdDate")</span>
     </li>
     <li class="info">
         <strong>File Name:</strong> <span>$content.get("file-name")</span>
@@ -56,15 +54,9 @@
         <strong>Local ID:</strong> <span>$content.get("localId")</span>
     </li>
     <li class="info">
-        <strong>Merge Strategy:</strong> <span>$content.get("merge-strategy")</span>
+        <strong>Display Template:</strong> <span>$content.get("display-template")</span>
     </li>
     <li class="info">
-        <strong>Object Group ID:</strong> <span>$content.get("objectGroupId")</span>
-    </li>
-    <li class="info">
-        <strong>Object ID:</strong> <span>$content.get("objectId")</span>
-    </li>
-    <li class="info">
-        <strong>Content Body:</strong> <span>$content.get("body_html")</span>
+        <strong>Content Body:</strong> <span>$content.get("body")</span>
     </li>
 </ul>

@@ -16,7 +16,7 @@
 *#
 
 #set ($crafterService = $utilLocator.findUtil('crafter-integration-portlet','com.rivet.crafter.service.CrafterLocalService'))
-#set ($qValue = "crafterSite:$crafter-site.getData() AND localId:$content-path.getData()")
+#set ($qValue = "crafterSite:$crafter-site.getData() AND localId:$local-id.getData()")
 #set ($query_parameters = {"q": $qValue})
 #set ($documentsMap = $crafterService.searchByMap($query_parameters))
 #set ($content = $documentsMap.get(0))
