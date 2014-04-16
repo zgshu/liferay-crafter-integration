@@ -1,4 +1,7 @@
 /**
+ * Copyright (C) 2014 Rivet Logic Corporation. All rights reserved.
+ */
+/**
  * Copyright (c) 2000-2013 Liferay, Inc. All rights reserved.
  *
  * This library is free software; you can redistribute it and/or modify it under
