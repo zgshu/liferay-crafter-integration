@@ -19,44 +19,48 @@
 #set ($qValue = "crafterSite:$crafter-site.getData() AND localId:$local-id.getData()")
 #set ($query_parameters = {"q": $qValue})
 #set ($documentsMap = $crafterService.searchByMap($query_parameters))
-#set ($content = $documentsMap.get(0))
+#if ($documentMap.size() > 0)
+	#set ($content = $documentsMap.get(0))
 
-#set ($css-path = '/velocity-templates-theme/css/')
-<link href="${css-path}main.css" rel="stylesheet" />
+	#set ($css-path = '/velocity-templates-theme/css/')
+	<link href="${css-path}main.css" rel="stylesheet" />
 
-<ul class="metadata">
+	<ul class="metadata">
 
-    <li class="info">
-        <strong>Title:</strong> <span><span>$content.get("title")</span></span>
-    </li>
-    <li class="info">
-        <strong>Author:</strong> <span><span>$content.get("author")</span></span>
-    </li>
-    <li class="info">
-        <strong>Author Image:</strong> <span><span><img src="$content.get("authorImage")" src="Mike Vertal" /></span></span>
-    </li>
-    <li class="info">
-        <strong>Content Type:</strong> <span>$content.get("content-type")</span>
-    </li>
-    <li class="info">
-        <strong>Crafter Site:</strong> <span>$content.get("crafterSite")</span>
-    </li>
-    <li class="info">
-        <strong>File Name:</strong> <span>$content.get("file-name")</span>
-    </li>
-    <li class="info">
-        <strong>ID:</strong> <span>$content.get("id")</span>
-    </li>
-    <li class="info">
-        <strong>Last Modification Date:</strong> <span>$content.get("lastModifiedDate")</span>
-    </li>
-    <li class="info">
-        <strong>Local ID:</strong> <span>$content.get("localId")</span>
-    </li>
-    <li class="info">
-        <strong>Display Template:</strong> <span>$content.get("display-template")</span>
-    </li>
-    <li class="info">
-        <strong>Content Body:</strong> <span>$content.get("body")</span>
-    </li>
-</ul>
+	    <li class="info">
+	        <strong>Title:</strong> <span><span>$content.get("title")</span></span>
+	    </li>
+	    <li class="info">
+	        <strong>Author:</strong> <span><span>$content.get("author")</span></span>
+	    </li>
+	    <li class="info">
+	        <strong>Author Image:</strong> <span><span><img src="$content.get("authorImage")" src="Mike Vertal" /></span></span>
+	    </li>
+	    <li class="info">
+	        <strong>Content Type:</strong> <span>$content.get("content-type")</span>
+	    </li>
+	    <li class="info">
+	        <strong>Crafter Site:</strong> <span>$content.get("crafterSite")</span>
+	    </li>
+	    <li class="info">
+	        <strong>File Name:</strong> <span>$content.get("file-name")</span>
+	    </li>
+	    <li class="info">
+	        <strong>ID:</strong> <span>$content.get("id")</span>
+	    </li>
+	    <li class="info">
+	        <strong>Last Modification Date:</strong> <span>$content.get("lastModifiedDate")</span>
+	    </li>
+	    <li class="info">
+	        <strong>Local ID:</strong> <span>$content.get("localId")</span>
+	    </li>
+	    <li class="info">
+	        <strong>Display Template:</strong> <span>$content.get("display-template")</span>
+	    </li>
+	    <li class="info">
+	        <strong>Content Body:</strong> <span>$content.get("body")</span>
+	    </li>
+	</ul>
+#else
+	<h2>Requested article was not found</h2>
+#end
